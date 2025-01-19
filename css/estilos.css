@@ -1,0 +1,22 @@
+/*selector de etiqueta*/
+a{
+    color:blueviolet;
+}
+article{
+    size:rgb(165, 118, 47)
+}
+img{
+    width: 20px;
+    height: 25px;
+}
+
+
+
+
+/*Selector de tipo de identificador*/
+#Beneficios{
+    background-color: rgb(185, 185, 46);
+}
+/*selector de tipo de clase*/
+.contenido1{
+background-color:rgb(102, 77, 45)}
