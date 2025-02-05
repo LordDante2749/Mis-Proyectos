@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foco-Criko</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+ <!-- Navegacion entre paginas -->
+ <nav>
+    <h3>Enlaces:</h3>
+    <a href="https://www.utj.edu.mx/">utj</a>
+    <a href="Https://www.google.com.mx">utj</a>
+    <a href="Https://volaris.mx">utj</a>
+    <a href="acerca.html">utj</a>
+    <a href="formulario.html"></a>
+    <a href="tablas.html"></a>
+    <a href="Historia.html"></a>
+ </nav>
+ 
+<body>
+    <main>
+        <div>
+            <h1>Formulario</h1>
+            <form action="http://soymarimacha.maruchan/recibeInfo.php"method="post">
+            <fieldset>
+                <legend> Informacion general</legend>
+                <label for="ifolio">Folio</label>
+                <input type="number"name="ifolio" id="ifolio">
+                <br>
+                <label for="lblnombre">Nombre:</label>
+                <input type="text" name="inombre" id="inombre" required>
+                <label for="iapellidos">apellidos</label>
+                <input type="text" name="iapellidos" id="iapellidos">
+                <br>
+                <label for="icurp">curp</label>
+                <input type="text" name="icurp" id="icurp">
+                <br>
+                <label for="icelular">celular</label>
+                <input type="tel" name="icelular" id="icelular" placeholder="33******">
+                <br>
+                <label for="ifechanac">Fecha de nacimiento</label>
+                <input type="date" name="ifechanac" id="ifechanac">
+                <br>
+                <label for="icorreo">Correo electronico</label>
+                <input type="email" name="icorreo" id="icorreo" placeholder="cuenta@dominio.com">
+                <br>
+                <label for="icontraseña">Contraseña</label>
+                <input type="contraseña" name="icontraseña" id="icontraseña">
+                <br>
+
+
+                <fieldset>
+                    <legend>Informacion laboral</legend>
+                    <label for="iempleo">Empleo anterior:</label>
+                    <input type="text" name="iempleo" id="iempleo" placeholder="Nombre de empresa">t
+                    <br>
+                    <label for="iaños">Años de servicio</label>
+                    <input type="number" name="iaños" id="iaños">
+                    <br>
+                    <label for="isueldo">Sueldo esperado</label>
+                    <input type="range" name="isueldo" id="isueldo" min="8000" max="60000" step="1000" value="8000">
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>Informacion academica</legend>
+                    <label for="ilinceciatura">Licenciatura/Ingenieria</label>
+                    <input type="text" name="ilicenciatura" id="ilicenciatura">
+                    <br>
+                    <label for="iestudios">Ultimo grado de estudios</label>
+                    <input type="radio" name="estudios" id="ilic" value="Licenciatura/Ingenieria">
+                    <label for="ilic">Licenciatura/ingenieria</label>
+                    <input type="radio" name="estudios" id="iesp" value="especialidad">
+                    <label for="iesp">especialidad</label>
+                    <input type="radio" name="estudios" id="imaestria" value="maestria">
+                    <br>
+                    <label for="iareas">Areas de interes en TI</label>
+                    <input type="checkbox" name="cweb" id="cweb">
+                    <label for="iseguridad">Seguridad informatica </label>
+                    <input type="checkbox" name="iseguridad" id="iseguridad">
+                    <label for="iservidores">Servidores</label>
+                    <input type="checkbox" name="iservidores" id="iservidores">
+                    <label for="iredes">Redes e Infrestructura</label>
+                    <input type="checkbox" name="iredes" id="iredes">
+                    <label for="imovil"> Desarrollo movil</label>
+                    <input type="checkbox" name="imovil" id="imovil">
+                    <br>
+
+                    <label for="icv">Sube archivo de cv</label>
+                    <input type="file" name="icv" id="icv" accept=".pdf">
+                    <br>
+                    <label for="icolor">color favorito</label>
+                    <input type="color" name="icolor" id="icolor">
+                    <br>
+                    <label for="icomentarios">comentarios adicionales</label>
+                    <textarea name="tcomentarios" id="tcomentarios" cols="60" rows="10"></textarea>
+                    <!--listas de opaciones-->
+                    <label for="ilenguajes">Lenguajes preferente:</label>
+                    <select name="lenguajes" id="lenguajes"></select>
+                    <optgroup><label for="front end"></label>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">Javascript</option>                                
+                    </optgroup>
+                    <optgroup> <label for="Back end"></label>
+                        <option value="php">PHP</option>
+                        <option value="python"></option>
+                        <option value="rubdy">Rubdy</option>
+                    </optgroup>
+                    <optgroup> <label for="movil"></label>
+                        <option value="java">Java</option>
+                        <option value="kotlin">Kotlin</option>
+                        <option value="flutter">Flutter</option>
+                    </optgroup>
+                    <br>
+
+                    <label for="ientornos">IDe preferido</label>
+                    <input name="ientornos" id="ientornos">
+                    <datalist id="tipos">
+                        <option value="netbeans">netbeans</option>
+                        <option value="visualstudio">Visual studio code</option>
+                        <option value="intelli">Intelli</option>
+                        <option value="sublime">Sublime</option>
+                    </datalist>
+                </fieldset>
+                <!--Botones de accion-->
+                <input type="button" value="Calculo">
+                <input type="submit" value="enviar formulario">
+                <input type="reset" value="Limpiar">
+                <br>
+                <button type="submit">Enviar formulario</button>
+                <button type="reset">Limpiar todo</button>
+                <button disabled="disabled">No disponible</button>
+                <button type="button">Accion</button>
+            </fieldset>
+            </form>
+        </div>
+     </main>
+    
+</body>
+   <!-- Pie de pagina-->
+   <footer>
+    <br>
+    <a>anuarmercado7836@gmail.com</a>
+<h4>Derechos Reservados:Anuar Mercado 2025</h4>
+</footer>
+</html>

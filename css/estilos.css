@@ -1,9 +1,15 @@
 /*selector de etiqueta*/
+/*Variables*/
+:root{
+    color
+}
+
 a{
-    color:blueviolet;
+    color:;
 }
 article{
-    size:rgb(51, 36, 13)
+    size:rgb(51, 36, 13);
+    padding-right: 10px;
 }
 img{
     width: 20px;
@@ -20,3 +26,62 @@ img{
 /*selector de tipo de clase*/
 .contenido1{
 background-color:rgb(102, 77, 45)}
+/*Estilo Para las Imagenes*/
+#image_logo{
+    border-radius: 20%;
+    
+}
+#image_art1{
+    border: 2px solid black;
+    padding: 10%;
+    float:right;
+}
+#igame_art2{
+    border: 1px solid orangered;
+    border-radius: 50%;
+    float: left; 
+}
+/*Estilo audio y video*/
+video{
+    width: 60%;
+    height: 60%;
+    padding: 60%;
+    
+}
+audio{
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid red;
+    background-color: grey;
+}
+/*Estilo de la tabla*/
+table{
+    width: 80%;
+    border-spacing: 5px;
+}
+caption{
+    color:rgb(7, 2, 77);
+    height: 35px;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+th{
+    border-style: ridge;
+    border-collapse: collapse;
+    background-color: brown;
+    color: beige;
+}
+tr.renglon_impar{
+border-style: inset;
+border-collapse: collapse;
+border-radius: 20px;
+}
+tr.renglon_par{
+border-style: groove;
+border-collapse: collapse;
+background-color: aqua;
+}
+td:hover{
+    background-color: black;
+    color:white;
+}
